@@ -1,0 +1,109 @@
+{% extends 'base.html' %}
+{% block title %}Contact Us{% endblock title %}
+{% block body %}
+
+<div class="container-fluid d-flex justify-content-center align-items-center my-2">
+
+    <div class="col-md-8 blog-main">
+
+        <div class="blog-post">
+
+
+            <div class="container marketing">
+
+                <!-- Three columns of text below the carousel -->
+
+
+
+                <!-- START THE FEATURETTES -->
+
+
+
+                <div class="row featurette">
+                    <div class="col-md-7">
+                        <h3 class="featurette-heading">Global Innovative School Parasia</h3>
+                        <p><b>Tamia-Bypass Road, Near C.I.S.F. Camp (Rajeev Gandhi Stadium), Th-Parasia,
+                                Dist.-Chhindwara, Pincode-480441, Madhya Pradesh </b></p>
+                        <p class="text-muted"><b>Mobile : +91-8319251062</b></p>
+                        <p class="text-muted"><b>Email : nitin@nitin</b></p>
+                        <p class="text-muted"><b>FAX : +91-XXXXXXXXXXX</b></p>
+                    </div>
+
+                </div>
+
+                <hr class="featurette-divider">
+
+                <div class="row featurette">
+                    <div class="col-md-7">
+                        <h4 class="featurette-heading">Mr. Dheeraj Rajlani</h4>
+                        <p><b>Director, Global Innovative School Parasia</b></p>
+                        <p class="text-muted"><b>Mobile : +91-7000819155</b></p>
+                        <p class="text-muted"><b>Email : director@gis.com</b></p>
+                    </div>
+
+                </div>
+
+                <hr class="featurette-divider">
+
+                <div class="row featurette">
+                    <div class="col-md-7">
+                        <h4 class="featurette-heading">Mrs. Nahid Anjum</h4>
+                        <p><b>Principal, Global Innovative School Parasia</b></p>
+                        <p class="text-muted"><b>Mobile : +91-XXXXXXXXXX</b></p>
+                        <p class="text-muted"><b>Email : Principal@gis.com</b></p>
+                    </div>
+
+                </div>
+
+                <hr class="featurette-divider">
+
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3694.305923415962!2d78.77653964763189!3d22.190477300000016!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd58f2e75af54eeb2!2sGlobal%20Innovative%20School!5e0!3m2!1sen!2sin!4v1655528035294!5m2!1sen!2sin"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                
+
+                <!-- /END THE FEATURETTES -->
+
+            </div>
+
+
+
+        </div><!-- /.blog-post -->
+
+        <hr class="featurette-divider">
+        <h4 class="text-center"><b>Stay Connected</b></h3>
+        <form method="post" action="/contact">
+            {% csrf_token %}
+            <div class="form-group">
+              <label for="name">Name :</label>
+              <input type="name" class="form-control" id="name" name="name" placeholder="Type your name here" required>
+            </div>
+            <div class="form-group">
+                <label for="mobile">Mobile No. :</label>
+                <input type="mobile" class="form-control" id="mobile" name="mobile" placeholder="Type your contact no. here" required>
+              </div>
+             
+            <div class="form-group">
+              <label for="msg">Message :</label>
+              <textarea class="form-control" id="msg" name="msg" rows="3" required></textarea>
+            </div>
+            <button class="btn btn-primary">Submit</button>
+          </form>
+
+
+
+
+
+
+
+    </div>
+
+
+
+</div>
+
+{% endblock body %}

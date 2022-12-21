@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+{% block title %}Admission{% endblock title %}
+{% block body %}
+<div class="container my-2">
+    <form method="post" action="/admission">
+        {% csrf_token %}
+
+        <div class="form-group">
+            <label for="father">Father's Name</label>
+            <input type="father" class="form-control" id="father" name="father" placeholder="Enter here" required>
+        </div>
+        <div class="form-group">
+            <label for="fo">Father's Occupation</label>
+            <input type="fo" class="form-control" id="fo" name="fo" placeholder="Enter here" required>
+        </div>
+        <div class="form-group">
+            <label for="mother">Mother's Name</label>
+            <input type="mother" class="form-control" id="mother" name="mother" placeholder="Enter here" required>
+        </div>
+        <div class="form-group">
+            <label for="mo">Mother's Occupation</label>
+            <input type="mo" class="form-control" id="mo" name="mo" placeholder="Enter here" required>
+        </div>
+        <div class="form-group">
+            <label for="child">Child's Name</label>
+            <input type="child" class="form-control" id="child" name="child" placeholder="Enter here" required>
+        </div>
+        <div class="form-group">
+            <label for="age">Child's Age</label>
+            <input type="age" class="form-control" id="age" name="age" placeholder="Enter here" required>
+        </div>
+        <div class="form-group">
+            <label for="address">Address</label>
+            <input type="address" class="form-control" id="address" name="address"
+                placeholder="Enter Your Address Here" required>
+        </div>
+        <div class="form-group">
+            <label for="mobile">Enter Your Mobile Number</label>
+            <input type="mobile" class="form-control" id="mobile" name="mobile"
+                placeholder="Enter Your Mobile Number Here" required>
+        </div>
+        <div class="form-group">
+            <label for="division">Which Class You Want To Admit Your Child</label>
+            <select class="form-control" id="division" name="division">
+                <option>Select Here</option>
+                <option>Nursery</option>
+                <option>Junior K.G.</option>
+                <option>Senior K.G.</option>
+                <option>Class 1st</option>
+                <option>Class 2nd</option>
+                <option>Class 3rd</option>
+                <option>Class 4th</option>
+                <option>Class 5th</option>
+                <option>Class 6th</option>
+                <option>Class 7th</option>
+                <option>Class 8th</option>
+                <option>Class 9th</option>
+                <option>Class 10th</option>
+                <option>Class 11th</option>
+                <option>Class 12th</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="desc">Your Query</label>
+            <textarea class="form-control" id="desc" rows="3" name="desc"
+                placeholder="Message (if any) . . . "></textarea>
+        </div>
+        <button class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
+{% endblock body %}

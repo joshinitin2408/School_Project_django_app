@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock title %}
+{% block body %}
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img class="d-block w-100" src="https://source.unsplash.com/1400x450/?Indian School" alt="First slide">
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100" src="https://source.unsplash.com/1400x450/?School class" alt="Second slide">
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100" src="https://source.unsplash.com/1400x450/?School students" alt="Third slide">
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<div class="container marketing">
+
+
+    <!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+        <div class="col-md-7">
+            <h2 class="featurette-heading">Welcome to Global Innovative School Parasia <span class="text-muted"></span>
+            </h2>
+            <p class="text-muted"><b>GLOBAL INNOVATIVE SCHOOL PARASIA is a Co-educational, exclusively English medium
+                    school. Our institution is private unaided, established, managed and run by Vidya Niketan Education
+                    and Welfare Society. The school is committed to give identical opportunities to boys and girls.
+                    Keeping in view that “Child is the most vital raw material in the world to be worked on”. The school
+                    offers quality education coupled with extra curricular activities aiming at sanskaras based on one’s
+                    culture, personality traits and bodily fitness which is also the need of the hour</b></p>
+            <h2 class="featurette-heading">Location<span class="text-muted"></span>
+            </h2>
+            <p class="text-muted"><b>GLOBAL INNOVATIVE SCHOOL PARASIA is located 4Km. from the heart of Parasia town on
+                    Tamia-Bypass Road near Rajeev Gandhi Stadium (C.I.S.F Camp).The founding members were conscious
+                    about the selection of the spacious land with beautiful surroundings,peacefull atmosphere which is
+                    soothing to the eyes in the midst of nature.</b></p>
+        </div>
+        <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500"
+                style="width: 500px; height: 500px;"
+                src="static/images/logo.png"
+                data-holder-rendered="true">
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+
+
+    <!-- /END THE FEATURETTES -->
+
+</div>
+
+
+{% endblock body %}
